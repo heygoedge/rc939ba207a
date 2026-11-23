@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Heygo 合作伙伴手册 · 2026</title>
+<meta name="description" content="Heygo 滑雪 AI 智能穿戴：产品、技术、团队、用户反馈与合作方式。">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@400;500;700;900&amp;family=Space+Grotesk:wght@500;700&amp;display=swap">
+<style>
+:root{--ink:#0e1211;--ink2:#171d1b;--paper:#f5f6f2;--card:#fff;--lime:#c4f53a;--lime-d:#5f7f0c;--mute:#5b6661;--line:#dfe4dc;--body:#252d29}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{font-family:"Noto Sans SC",system-ui,-apple-system,"PingFang SC",sans-serif;background:var(--paper);color:var(--body);line-height:1.8;-webkit-font-smoothing:antialiased;font-size:15.5px}
+.num{font-family:"Space Grotesk","Noto Sans SC",sans-serif;font-feature-settings:"tnum"}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--lime-d);text-decoration:none;border-bottom:1px solid rgba(95,127,12,.35)}
+a:hover{border-bottom-color:var(--lime-d)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 28px}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:20;background:rgba(14,18,17,.94);backdrop-filter:blur(8px);border-bottom:1px solid #26302c}
+.nav .wrap{display:flex;align-items:center;gap:22px;height:56px;overflow-x:auto;scrollbar-width:none}
+.nav .wrap::-webkit-scrollbar{display:none}
+.logo{font-family:"Space Grotesk",sans-serif;font-weight:700;color:#fff;font-size:20px;letter-spacing:.02em;border:0;flex:none}
+.logo span{color:var(--lime)}
+.nav a.l{color:#b9c2bd;font-size:14px;border:0;white-space:nowrap;flex:none}
+.nav a.l:hover,.nav a.l.on{color:var(--lime)}
+
+/* hero */
+.hero{position:relative;color:#fff;background:#0e1211 url(img/hero.jpg) center 35%/cover no-repeat}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,13,12,.93) 0%,rgba(10,13,12,.88) 60%,rgba(10,13,12,.6) 100%),linear-gradient(180deg,rgba(10,13,12,0) 50%,#0e1211 100%)}
+.hero{background-position:right 30%}
+.hero .wrap{position:relative;padding-top:96px;padding-bottom:44px}
+.tag{font-family:"Space Grotesk",sans-serif;font-weight:700;letter-spacing:.16em;font-size:13px;color:var(--lime)}
+.hero h1{font-size:clamp(32px,5vw,54px);line-height:1.22;font-weight:900;margin:14px 0 14px;color:#fff}
+.hero .lead{font-size:clamp(16px,1.8vw,19px);color:#dfe6e1;max-width:760px}
+.hero .cta{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:10px 20px;border-radius:999px;font-weight:700;font-size:14.5px;border:0}
+.btn.p{background:var(--lime);color:#0e1211}
+.btn.g{border:1px solid #6c7772;color:#fff}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#2b3330;margin-top:44px;border:1px solid #2b3330}
+.kpi{background:rgba(23,29,27,.92);padding:18px 20px}
+.kpi b{display:block;font-size:32px;line-height:1.15;color:var(--lime);font-family:"Space Grotesk",sans-serif}
+.kpi span{color:#aab4af;font-size:13.5px}
+
+/* sections */
+section{padding:72px 0 20px}
+section.dark{background:var(--ink);color:#d7ded9;padding-bottom:64px;margin-top:52px}
+.sno{font-family:"Space Grotesk",sans-serif;font-weight:700;color:var(--lime-d);letter-spacing:.14em;font-size:13px}
+.dark .sno{color:var(--lime)}
+h2{font-size:clamp(26px,3.4vw,36px);line-height:1.3;font-weight:900;color:var(--ink);margin:6px 0 14px}
+.dark h2,.dark h3{color:#fff}
+h3{font-size:20px;font-weight:700;color:var(--ink);margin:40px 0 12px}
+.intro{font-size:17px;color:var(--mute);max-width:820px}
+.dark .intro{color:#aab4af}
+p+p{margin-top:10px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 22px 20px}
+.dark .card{background:var(--ink2);border-color:#2b3330}
+.card h4{font-size:17px;color:var(--ink);margin-bottom:6px;font-weight:700}
+.dark .card h4{color:#fff}
+.card p,.card li{font-size:14.5px}
+.card .k{font-family:"Space Grotesk",sans-serif;font-weight:700;color:var(--lime-d);font-size:13px;letter-spacing:.08em}
+.dark .card .k{color:var(--lime)}
+ul.dot{list-style:none}
+ul.dot li{position:relative;padding-left:16px;margin:5px 0}
+ul.dot li:before{content:"";position:absolute;left:0;top:.72em;width:6px;height:6px;border-radius:50%;background:var(--lime-d)}
+.dark ul.dot li:before{background:var(--lime)}
+figure{margin:22px 0}
+figure img{border-radius:12px;border:1px solid var(--line)}
+.dark figure img{border-color:#2b3330}
+figcaption{font-size:13px;color:var(--mute);margin-top:8px;text-align:center}
+.dark figcaption{color:#8d9893}
+table{width:100%;border-collapse:collapse;font-size:14.5px;background:var(--card);border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#eef1ea;color:var(--ink);font-weight:700;font-size:13.5px}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:700;color:var(--ink);white-space:nowrap}
+.dark table{background:var(--ink2);border-color:#2b3330}
+.dark th{background:#1f2724;color:#fff}
+.dark td{border-color:#2b3330}
+.dark td:first-child{color:#fff}
+.tbl{overflow-x:auto;margin:16px 0}
+.pill{display:inline-block;font-size:12px;font-weight:700;padding:1px 9px;border-radius:999px;background:#e6f5bd;color:#3d530a;white-space:nowrap}
+.pill.b{background:#e3ecf7;color:#23466f}
+.pill.c{background:#efe9f7;color:#4d2f73}
+
+/* timeline */
+.tl{position:relative;margin:18px 0 0 6px;border-left:2px solid var(--line);padding-left:22px}
+.tl div{position:relative;margin-bottom:14px}
+.tl div:before{content:"";position:absolute;left:-29px;top:.55em;width:12px;height:12px;border-radius:50%;background:var(--lime);border:2px solid var(--ink)}
+.tl b{font-family:"Space Grotesk",sans-serif;color:var(--ink);margin-right:10px}
+
+/* gallery */
+.phones{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:20px}
+.phones figure{margin:0}
+.phones img{border-radius:18px;border:1px solid #2b3330;background:#fff}
+.posters{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:20px}
+.posters img{border-radius:10px}
+
+/* quotes */
+.quotes{columns:3;column-gap:18px;margin-top:20px}
+.q{break-inside:avoid;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:18px}
+.q p{font-size:15.5px;color:var(--ink);line-height:1.75}
+.q span{display:block;margin-top:10px;font-size:13px;color:var(--mute)}
+.q.hl{background:var(--ink);border-color:var(--ink)}
+.q.hl p{color:#fff;font-size:18px;font-weight:700}
+.q.hl span{color:var(--lime)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:18px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 14px;position:relative}
+.step b{display:block;font-family:"Space Grotesk",sans-serif;font-size:13px;color:var(--lime-d)}
+.step h4{font-size:15.5px;color:var(--ink);margin:4px 0 4px}
+.step p{font-size:13.5px;color:var(--mute);line-height:1.65}
+
+.dark .step{background:var(--ink2);border-color:#2b3330}.dark .step h4{color:#fff}.dark .step b{color:var(--lime)}.dark .step p{color:#aab4af}
+.pain-hero{display:grid;grid-template-columns:1.25fr 1fr;gap:0;margin-top:22px;border-radius:16px;overflow:hidden;background:var(--ink);color:#d7ded9}
+.ph-l{padding:30px 30px 28px}
+.ph-l .k{font-family:"Space Grotesk",sans-serif;font-weight:700;color:var(--lime);font-size:13px;letter-spacing:.1em}
+.ph-l h4{font-size:clamp(26px,3.2vw,34px);line-height:1.3;color:#fff;font-weight:900;margin:8px 0 12px}
+.ph-l p{font-size:15.5px}
+.ph-r{background:#171d1b;padding:22px 26px;display:flex;flex-direction:column;justify-content:center;gap:16px;border-left:1px solid #2b3330}
+.ph-r b{display:block;color:var(--lime);font-size:22px;line-height:1.3}
+.ph-r span{font-size:13.5px;color:#aab4af}
+.pains{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+.pain{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 24px 18px;position:relative}
+.pain .pn{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:30px;color:#cfe88a;line-height:1}
+.pain h4{font-size:18px;color:var(--ink);margin:8px 0 8px;font-weight:700}
+.pain li{font-size:14.5px;margin:7px 0}
+.pain li b{color:var(--ink)}
+.answer{margin-top:18px;border:1px solid #cfe88a;background:#f4fbe3;border-radius:14px;padding:20px 24px}
+.answer .k{font-family:"Space Grotesk",sans-serif;font-weight:700;color:var(--lime-d);font-size:13px;letter-spacing:.1em}
+.ans-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:10px}
+.ans-grid b{display:block;font-size:17px;color:var(--ink)}
+.ans-grid span{font-size:14px}
+.shots{columns:2;column-gap:16px;margin-top:14px}
+.shots figure{break-inside:avoid;margin:0 0 16px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px}
+.shots figure img{border:0;border-radius:6px}
+.shots figure.wide{column-span:all}
+.shots figcaption{text-align:left;color:var(--ink);font-size:13.5px;padding:4px 4px 2px}
+.ov{position:fixed;inset:0;z-index:100;background:rgba(8,10,10,.72);display:none;align-items:center;justify-content:center}
+.ov.on{display:flex}
+.ov .box{background:#fff;border-radius:14px;width:min(1100px,96vw);height:min(860px,92vh);display:flex;flex-direction:column;overflow:hidden}
+.ov .bar{display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line);font-size:14px}
+.ov .bar .t{flex:1;font-weight:700;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ov .bar button,.cp button{font:inherit;font-size:13.5px;font-weight:700;border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 14px;cursor:pointer;color:var(--ink)}
+.ov .bar button.x{background:var(--ink);color:#fff;border-color:var(--ink)}
+.ov iframe{flex:1;border:0;width:100%}
+.cp{position:fixed;inset:0;z-index:101;background:rgba(8,10,10,.72);display:none;align-items:center;justify-content:center}
+.cp.on{display:flex}
+.cp .box{background:#fff;border-radius:14px;width:min(520px,92vw);padding:24px}
+.cp h4{font-size:18px;color:var(--ink);margin-bottom:6px}
+.cp p{font-size:14px;color:var(--mute)}
+.cp .u{margin:14px 0;padding:10px 12px;background:#eef1ea;border-radius:8px;font-size:14px;word-break:break-all;color:var(--ink)}
+.cp .row{display:flex;gap:10px;justify-content:flex-end}
+.cp button.p{background:var(--lime);border-color:var(--lime)}
+.links{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+.links a{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;color:var(--ink)}
+.links a:hover{border-color:var(--lime-d)}
+.links a b{display:block;font-size:16px}
+.links a span{font-size:13.5px;color:var(--mute)}
+.links a i{font-style:normal;color:var(--lime-d);font-size:13px;font-weight:700}
+.media a{display:block}
+footer{background:var(--ink);color:#8d9893;padding:44px 0 56px;margin-top:72px;font-size:13.5px}
+footer b{color:#fff}
+footer a{color:var(--lime);border-bottom-color:rgba(196,245,58,.4)}
+.note{font-size:13px;color:var(--mute);margin-top:10px}
+.dark .note{color:#8d9893}
+
+@media (max-width:860px){
+  body{font-size:15px}
+  .wrap{padding:0 18px}
+  .kpis{grid-template-columns:1fr 1fr}
+  .grid2,.grid3{grid-template-columns:1fr}
+  .grid4{grid-template-columns:1fr 1fr}
+  .phones{grid-template-columns:1fr 1fr;gap:12px}
+  .posters{grid-template-columns:repeat(3,1fr)}
+  .quotes{columns:1}
+  .shots{columns:1}
+  .steps{grid-template-columns:1fr 1fr}
+  .links{grid-template-columns:1fr}
+  .pain-hero,.pains{grid-template-columns:1fr}
+  .ph-r{border-left:0;border-top:1px solid #2b3330}
+  .ans-grid{grid-template-columns:1fr 1fr}
+  .ph-l{padding:24px 20px}
+  section{padding-top:56px}
+  .hero .wrap{padding-top:64px}
+  td:first-child{white-space:normal;min-width:84px}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav"><div class="wrap">
+  <a class="logo" href="#top">Hey<span>go</span></a>
+  <a class="l" href="#about">关于我们</a>
+  <a class="l" href="#hardware">硬件</a>
+  <a class="l" href="#app">App 与体验</a>
+  <a class="l" href="#tech">算法与核心技术</a>
+  <a class="l" href="#team">团队</a>
+  <a class="l" href="#voice">用户反馈</a>
+  <a class="l" href="#club">俱乐部合作</a>
+  <a class="l" href="#eco">渠道与生态</a>
+  <a class="l" href="#media">媒体与资料</a>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <div class="tag">HEYGO · PARTNER BRIEF · 2026</div>
+  <h1 style="font-family:'Space Grotesk','Noto Sans SC',sans-serif;letter-spacing:-.01em">Make every<br>run count.</h1>
+  <p class="lead">Heygo 是滑雪 AI 智能穿戴。两只夹在雪鞋上的传感器，加上自研算法和 AI 陪伴搭子，把一天的滑行拆到每一个弯，告诉滑手<b style="color:#fff">这一趟哪里好、下一趟练什么</b>。</p>
+  <div class="kpis">
+    <div class="kpi"><b class="num">200 万+</b><span>累计采集滑行数据</span></div>
+    <div class="kpi"><b class="num">100+</b><span>输出数据维度，逐弯分析</span></div>
+    <div class="kpi"><b class="num">38+</b><span>覆盖国家和地区</span></div>
+    <div class="kpi"><b class="num">50+</b><span>教官 / 滑手背书</span></div>
+  </div>
+</div></header>
+
+<!-- 1 ABOUT -->
+<section id="about"><div class="wrap">
+  <div class="sno">01 · ABOUT</div>
+  <h2>关于 Heygo</h2>
+  <p class="intro">Heygo 专注于为冬季运动打造 AI 运动指导系统，以单板滑雪作为第一个核心场景。我们把高精度动作传感器和自研 AI 分析引擎结合，实时捕捉雪板立刃、受力和节奏，在滑行中给出语音反馈，滑行后给出逐弯复盘和练习建议。</p>
+  <p class="intro" style="margin-top:12px">我们不做只会记录数据的设备，也不替代真人教练。Heygo 的角色是 <b style="color:var(--ink)">AI 陪伴搭子（Progress Partner）</b>：在课程之外、每一次自己上雪时，陪滑手看清自己、看清动作、定位问题，帮助持续进步。对教练和俱乐部来说，它是课堂的延伸：课上学的动作，课后有数据持续跟踪。</p>
+
+  <div class="grid2" style="margin-top:28px">
+    <div class="tbl" style="margin:0"><table>
+      <tr><td>品牌</td><td>Heygo（heygo.ai）</td></tr>
+      <tr><td>运营主体</td><td>深圳市比特天空科技有限公司；美国主体 Heygo, Inc.</td></tr>
+      <tr><td>成立</td><td>2025 年，已完成天使轮融资</td></tr>
+      <tr><td>办公地点</td><td>总部深圳南山；香港、美国、新西兰设有分部</td></tr>
+      <tr><td>品类</td><td>滑雪 AI 智能穿戴（硬件 + App + Pro 订阅）</td></tr>
+      <tr><td>首款产品</td><td>Heygo S1：单板双脚传感器 + Heygo App，2026 年 10 月全球开售</td></tr>
+    </table></div>
+    <div class="card">
+      <div class="k">MISSION</div>
+      <h4>使命</h4>
+      <p>通过创新的硬件、软件和服务，帮助运动爱好者更好地掌握技术，更充分地享受运动乐趣，更深层地共鸣运动精神，更极致地探索无限可能。</p>
+      <div class="k" style="margin-top:16px">VISION</div>
+      <h4>愿景</h4>
+      <p>成为卓越的运动智能科技公司，打造个人运动健康的智能身体入口，让运动变得更美好。</p>
+      <p style="color:var(--mute);font-size:13.5px;margin-top:6px">To make skiing better than we found it.</p>
+    </div>
+  </div>
+
+  <h3>发展历程</h3>
+  <div class="tl">
+    <div><b>2025 下半年</b>内测硬件到 EVT 样机，11 月雪场测试；算法中台启动，40+ 基础指标跑通</div>
+    <div><b>2026.07</b>首批工程样机在新西兰雪场实测，并拍摄品牌 TVC</div>
+    <div><b>2026.08</b>Heygo App 1.0 发布；小批量试产</div>
+    <div><b>2026.09</b>海外官网开启预售；三件发明专利获受理；进入大货量产；京东众筹上线</div>
+    <div><b>2026.10</b>App 国际版、中国版先后上线；海外发货；10/20 国内全渠道现货发售；WTCC 2026 主舞台发布</div>
+    <div><b>2026.11</b>北半球雪季开板；与国际考官在崇礼开展双板标准数据采集</div>
+  </div>
+
+  <h3 style="margin-top:56px">痛点：花钱难学艺，自学风险高，进步无方向</h3>
+  <p class="intro">滑雪人群在增长，但滑手学技术、练技术的方式还停留在过去：贵，主观，没有反馈，也没有记录。</p>
+
+  <div class="pain-hero">
+    <div class="ph-l">
+      <div class="k">核心痛点</div>
+      <h4>滑得好不好，全靠猜。</h4>
+      <p>滑雪技术没办法被量化。一趟滑下来，滑得好不好只能靠感觉，或者等别人的一句评价。自己练的时候，不知道哪里做对了、哪里做错了；错误动作一遍遍重复，最后变成肌肉记忆。</p>
+    </div>
+    <div class="ph-r">
+      <div><b class="num">¥500–2,000</b><span>国内滑雪教练每小时的常见价格，4 天私教课程可能超过一万元</span></div>
+      <div><b>标准不统一</b><span>同一个问题，不同教练给出的方法可能完全相反</span></div>
+      <div><b>反馈滞后</b><span>滑完再看视频复盘，动作已经练过很多遍</span></div>
+    </div>
+  </div>
+
+  <div class="pains">
+    <div class="pain">
+      <div class="pn num">01</div>
+      <h4>传统教学贵、效率低，靠主观经验</h4>
+      <ul class="dot">
+        <li><b>费用高</b>：私教课每小时 500 到 2,000 元，再加上装备和雪票，大多数滑手负担不起长期系统的带教。很多用户抱怨，花四五千元请的教练，效果还不如自己看短视频教学。</li>
+        <li><b>评估靠经验</b>：教学缺少可量化的标准。以走刃为例，有的教练强调「转胯带动板头」，有的强调「重心平移为主」，学员无所适从；选到水平不够的教练，还可能养成「用腰甩板」这类难以纠正的习惯。</li>
+        <li><b>质量参差不齐</b>：教练资质和水平差异大，多数教学停留在基础动作，对科学训练和技术问题的定位理解不足；教学质量和安全都缺少保障。</li>
+      </ul>
+    </div>
+    <div class="pain">
+      <div class="pn num">02</div>
+      <h4>没有实时量化分析和精准指导工具</h4>
+      <ul class="dot">
+        <li><b>动作盲区难自查</b>：滑雪动作快、变化多，重心偏移、立刃不足这类细微错误，靠自我感觉、肉眼或视频都很难准确定位。滑手常常「自我感觉良好，实际动作变形」。</li>
+        <li><b>进步难量化</b>：技术有没有提升，只能凭感觉判断，没有科学指标长期跟踪。</li>
+        <li><b>数据测不到技术</b>：运动手表、滑雪记录 App 只能记录速度、距离、轨迹，看不到转弯质量、立刃和受力分配这些技术细节。</li>
+      </ul>
+    </div>
+    <div class="pain">
+      <div class="pn num">03</div>
+      <h4>学习曲线陡，挫败感强</h4>
+      <ul class="dot">
+        <li><b>自学难度高</b>：单板对平衡和协调要求很高，动作失误容易频繁摔倒受伤，打击信心。</li>
+        <li><b>反馈滞后</b>：滑完一整趟再回看视频复盘，无法在下一趟及时修正，练习效率低。</li>
+        <li><b>缺少个性化指导</b>：通用教学和视频无法适配每个人的实际水平和滑行风格（例如引伸式和团身式）。</li>
+      </ul>
+    </div>
+    <div class="pain">
+      <div class="pn num">04</div>
+      <h4>课后没有陪练，也没有持续反馈</h4>
+      <ul class="dot">
+        <li><b>课后练习断层</b>：多数人只在入门或遇到瓶颈时请教练，其余时间凭记忆和感觉自己练。动作变形自己察觉不到，问题越积越多，形成肌肉记忆后纠正成本很高。</li>
+        <li><b>学完就忘</b>：上完课一段时间后技术停滞很常见。反复练错误动作，信心下降，慢慢失去对滑雪的热情。</li>
+        <li><b>没有连续记录</b>：换雪场、换教练，个人的动作习惯和进步轨迹就断了；长期的错误动作也增加受伤风险。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="answer">
+    <div class="k">HEYGO 的回答</div>
+    <div class="ans-grid">
+      <div><b>量化</b><span>双脚传感器测出立刃、受力、换刃时机和弯型，100+ 数据维度，Heygo IQ 给出可比较的技术分</span></div>
+      <div><b>实时</b><span>滑行中耳机语音提醒，坐缆车时就能看到上一趟报告，下一趟马上改</span></div>
+      <div><b>个性化</b><span>按每个人的场景和问题，一次只给一个最该练的点，配练习方法</span></div>
+      <div><b>陪伴</b><span>每一趟都进入个人训练档案，课后自己练也有反馈，和教练形成互补</span></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- 2 HARDWARE -->
+<section id="hardware" class="dark"><div class="wrap">
+  <div class="sno">02 · HARDWARE</div>
+  <h2>硬件：Heygo S1</h2>
+  <p class="intro">两只传感器 + 充电盒 + 雪鞋固定夹。夹在单板雪鞋外侧，几秒扣上，不用工具。</p>
+  <div class="grid2" style="margin-top:24px;align-items:center">
+    <figure style="margin:0"><img src="img/kit.jpg" alt="S1 套装" loading="lazy"><figcaption>S1 套装：左右脚传感器、充电盒、雪鞋固定夹</figcaption></figure>
+    <figure style="margin:0"><img src="img/boot.jpg" alt="Heygo S1 佩戴" loading="lazy" style="max-height:520px;margin:0 auto;background:#fff"><figcaption>夹在雪鞋外侧，滑行无感</figcaption></figure>
+  </div>
+  <div class="card" style="margin-top:22px">
+    <div class="k">WHY TWO · WHY FEET</div>
+    <h4>为什么是两只、为什么在脚上</h4>
+    <p>单板的核心信息在两只脚的差异里。立刃角、前后刃对称、甩板尾、换刃时机，都要两只脚一起算；传感器离雪板越近，越能测准板子真实在做什么。这是手表、手机 GPS 做不到的。</p>
+  </div>
+  <figure><img src="img/imu.jpg" alt="双 IMU" loading="lazy"><figcaption>双 IMU + 补偿算法，捕捉雪上真实动作：重心平衡、压力分配、换刃时机、转弯节奏</figcaption></figure>
+
+  <h3>关键参数</h3>
+  <div class="tbl"><table>
+    <tr><td>传感器</td><td>六轴 IMU（±16g、±4000 dps）+ 磁力计 + 气压计</td></tr>
+    <tr><td>主控与连接</td><td>Nordic nRF54L15，低功耗蓝牙；两只设备各自直连手机，加密绑定</td></tr>
+    <tr><td>尺寸与重量</td><td>本体约 90 × 25 × 15 mm，本体加夹子约 43 g</td></tr>
+    <tr><td>续航</td><td>单次约 5 天；配合充电盒可满足整月滑行</td></tr>
+    <tr><td>环境与可靠性</td><td>IP67 防水，IPX8 第三方测试通过；−40 ~ 45 °C 环境压力测试通过；1.2 米六面十二角跌落通过；48 项可靠性矩阵签样</td></tr>
+    <tr><td>数据可靠性</td><td>断连时数据存在设备本地，重连后自动补传；没网也能滑</td></tr>
+    <tr><td>OTA</td><td>固件支持空中升级，持续迭代</td></tr>
+    <tr><td>认证</td><td>FCC / ISED / CE RED / RoHS / REACH / WEEE / UKCA / SRRC / TELEC / UN38.3 等；国内 3C</td></tr>
+  </table></div>
+
+  <h3>硬件路线图</h3>
+  <div class="tbl"><table>
+    <tr><th>产品</th><th>状态</th><th>是什么</th></tr>
+    <tr><td>S1 单板双脚传感器</td><td><span class="pill">在售</span></td><td>两只传感器 + 充电盒，夹在雪鞋外侧</td></tr>
+    <tr><td>S1 双板模式</td><td><span class="pill b">研发中</span></td><td>同一套 S1 装在双板雪鞋上；与国际考官共建标准，计划 2027 年初 App 上线双板模式</td></tr>
+    <tr><td>S1.5 可穿戴动捕</td><td><span class="pill c">规划</span></td><td>双脚 + 骨盆 + 胸口 4 个节点，看全身姿态</td></tr>
+    <tr><td>S2 绑带版</td><td><span class="pill c">规划</span></td><td>低成本多节点，同时服务单板、双板，兼容 VR 全身追踪生态</td></tr>
+    <tr><td>生态接入</td><td><span class="pill c">预研</span></td><td>接入第三方心率等穿戴数据、AI 眼镜、跟拍无人机</td></tr>
+  </table></div>
+</div></section>
+
+<!-- 3 APP -->
+<section id="app"><div class="wrap">
+  <div class="sno">03 · SOFTWARE &amp; APP</div>
+  <h2>软件：Heygo App 与使用体验</h2>
+  <p class="intro">一个完整的 AI 训练闭环：看得见、看得懂、说得出、记得住。iOS / Android 均已上线，支持中文、英文、日文。</p>
+  <figure><img src="img/loop.jpg" alt="AI 训练闭环" loading="lazy"><figcaption>感知 → 理解 → 反馈 → 记忆：每一次滑行的 AI 训练闭环</figcaption></figure>
+
+  <div class="grid4">
+    <div class="card"><div class="k">01</div><h4>看得见</h4><p>采集 100+ 数据维度，从立刃、受力、节奏到弯型，把每一趟变成可分析的数据。</p></div>
+    <div class="card"><div class="k">02</div><h4>看得懂</h4><p>基于国际单板教学体系和真实滑行数据，判断问题出在时机、施压、流畅度还是对称性。</p></div>
+    <div class="card"><div class="k">03</div><h4>说得出</h4><p>滑行中蓝牙耳机实时语音；滑完给报告，还能和 AI 对话追问。</p></div>
+    <div class="card"><div class="k">04</div><h4>记得住</h4><p>每一趟沉淀进个人训练档案，越用越了解这位滑手的阶段和习惯。</p></div>
+  </div>
+
+  <h3>核心功能</h3>
+  <div class="tbl"><table>
+    <tr><th>功能</th><th>用户得到什么</th></tr>
+    <tr><td>实时语音</td><td>停下或坐缆车时，耳机里播报这一段最该纠正的一点；摔倒后关心提醒；可选详细 / 简洁 / 静音，支持中、英、日</td></tr>
+    <tr><td>单趟报告</td><td>坐缆车上升自动切趟，约 1.5 分钟出报告；速度、距离、落差、转弯数，以及这一趟真正影响表现的关键片段</td></tr>
+    <tr><td>逐弯分析</td><td>每个弯的立刃、施压、换刃时机、弯型；问题分前刃 / 后刃统计，帮用户找到弱侧</td></tr>
+    <tr><td>完整弯型图</td><td>把整趟每个弯的真实轨迹画出来，标出换刃点和立刃峰值；好坏一眼看出</td></tr>
+    <tr><td>Heygo IQ</td><td>满分 200 的技术分，按走刃和搓雪两条路线分别打分；四个维度：时机、施压、流畅度、对称</td></tr>
+    <tr><td>动作识别模型</td><td>识别滑雪特征动作和滑法：搓雪小回转、搓雪中回转、搓雪大回转、走刃 Carving、S 弯、C 弯、J 弯、摔倒等，并持续扩充动作类型</td><td><span class="pill">已上线</span></td></tr>
+    <tr><td>高光时刻</td><td>自动找出今天最快、最顺、立刃最深的瞬间，带来成就感，方便分享</td></tr>
+    <tr><td>当日报告与训练建议</td><td>结合全天和历史数据识别反复出现的问题，每次只给一个最该练的点，配练习方法和教学视频</td></tr>
+    <tr><td>Ask Heygo（AI 对话）</td><td>带着这一趟、这个弯的上下文追问：「为什么我左边还是弱？」「下一趟怎么练？」</td></tr>
+    <tr><td>课程库</td><td>100+ 单板训练课程：站姿、重心、施压、换刃、走刃、C 弯、S 弯、刻滑、滚刃等</td></tr>
+  </table></div>
+</div></section>
+
+<section class="dark" style="margin-top:40px"><div class="wrap">
+  <div class="sno">APP SCREENS</div>
+  <h2>App 真实界面</h2>
+  <p class="intro">按使用顺序：首页 → 单趟报告 → 片段 → 弯型图 → Heygo IQ → 当日报告 → 滑行中语音 → 里程碑。想亲手点一点，可以打开 <a href="https://heygoedge.github.io/r674670495e/" target="_blank" style="color:var(--lime)">App 在线体验版</a>（生产版界面 + 演示数据，手机、电脑都能打开）。</p>
+  <div class="phones">
+    <figure><img src="img/s_home.jpg" loading="lazy" alt="首页"><figcaption>首页：今日 IQ 与雪迹</figcaption></figure>
+    <figure><img src="img/s_run.jpg" loading="lazy" alt="单趟报告"><figcaption>单趟报告：做得好 + 下一趟练什么</figcaption></figure>
+    <figure><img src="img/s_seg.jpg" loading="lazy" alt="片段"><figcaption>片段：坡度、节奏、半径与最佳弯形</figcaption></figure>
+    <figure><img src="img/s_shape.jpg" loading="lazy" alt="弯型图"><figcaption>完整弯型图：换刃点与立刃峰值</figcaption></figure>
+    <figure><img src="img/s_iq.jpg" loading="lazy" alt="Heygo IQ"><figcaption>Heygo IQ：能力分布与四个维度</figcaption></figure>
+    <figure><img src="img/s_day.jpg" loading="lazy" alt="当日报告"><figcaption>当日报告：今日故事与 IQ 占比</figcaption></figure>
+    <figure><img src="img/s_voice.jpg" loading="lazy" alt="语音"><figcaption>滑行中语音记录与 AI 对话入口</figcaption></figure>
+    <figure><img src="img/s_mile.jpg" loading="lazy" alt="里程碑"><figcaption>里程碑：最大速度等成就</figcaption></figure>
+  </div>
+  <div class="posters">
+    <img src="img/a01.jpg" loading="lazy" alt=""><img src="img/a02.jpg" loading="lazy" alt=""><img src="img/a03.jpg" loading="lazy" alt="">
+    <img src="img/a04.jpg" loading="lazy" alt=""><img src="img/a05.jpg" loading="lazy" alt=""><img src="img/a06.jpg" loading="lazy" alt="">
+  </div>
+  <div class="grid2" style="margin-top:22px">
+    <figure style="margin:0"><img src="img/voice.jpg" loading="lazy" alt="实时语音"><figcaption>滑行中的实时语音反馈</figcaption></figure>
+    <figure style="margin:0"><img src="img/reports.jpg" loading="lazy" alt="三层报告"><figcaption>片段、单趟、全天三层复盘报告</figcaption></figure>
+    <figure style="margin:0"><img src="img/metrics.jpg" loading="lazy" alt="指标"><figcaption>把「感觉」变成可训练的运动指标</figcaption></figure>
+    <figure style="margin:0"><img src="img/courses.jpg" loading="lazy" alt="课程库"><figcaption>100+ 单板训练课程库</figcaption></figure>
+  </div>
+
+  <h3>上手体验</h3>
+  <div class="grid3">
+    <div class="card"><h4>扫码即用</h4><p>扫包装盒上的二维码，按地区和手机系统自动下载对应版本；盒码与 SN 一一对应。</p></div>
+    <div class="card"><h4>随手佩戴</h4><p>自动识别戴在哪只脚、内侧还是外侧，无需手动设置；滑几个弯自动完成校准。</p></div>
+    <div class="card"><h4>中国区 / 国际区</h4><p>两区账号、数据、部署完全隔离，满足各地合规；中国区支持微信、支付宝直付。</p></div>
+  </div>
+
+  <h3>价格与会员</h3>
+  <div class="tbl"><table>
+    <tr><th>项目</th><th>中国区</th><th>国际区</th></tr>
+    <tr><td>S1 硬件</td><td>¥1,699</td><td>$289</td></tr>
+    <tr><td>Pro 订阅</td><td>¥98 / 月，¥398 / 年</td><td>$59.99 / 月，$139.99 / 年</td></tr>
+    <tr><td>新用户权益</td><td>绑定设备赠送 6 个月 Pro；免费版每雪季前 10 个雪日有 AI 报告</td><td>绑定设备赠送 6 个月 Pro；免费版有每日额度</td></tr>
+  </table></div>
+  <p class="note">全渠道统一控价。实时语音、AI 报告、AI 对话、训练计划等持续迭代的能力在 Pro 中提供。</p>
+</div></section>
+
+<!-- 4 TECH -->
+<section id="tech"><div class="wrap">
+  <div class="sno">04 · TECHNOLOGY</div>
+  <h2>算法与核心技术</h2>
+  <p class="intro">Heygo 的核心是一套全链路自研的运动感知与教学算法体系：从脚上的原始信号，到校准、切弯、指标、评分、问题识别、弯型呈现，再到 AI 的教学表达。核心运动解算不依赖第三方基础大模型。</p>
+  <figure><img src="img/pipeline.jpg" alt="算法链路" loading="lazy"><figcaption>从传感器读数到 Heygo IQ 的完整链路（图中数值为示意）</figcaption></figure>
+
+  <h3>从一串数字到「下一趟练什么」</h3>
+  <div class="grid3">
+    <div class="card"><div class="k">STEP 1</div><h4>佩戴自适应与校准</h4><p>自动识别左右脚、内外侧；滑几个弯自动求出传感器与雪板的相对方向，设备挪位后几秒内重新收敛。</p></div>
+    <div class="card"><div class="k">STEP 2</div><h4>切趟、切段、切弯</h4><p>气压计识别坐缆车自动切趟；切出每一个弯，分入弯、弯中、出弯，标前刃 / 后刃。</p></div>
+    <div class="card"><div class="k">STEP 3</div><h4>逐弯指标</h4><p>立刃角、换刃时机、施压、弯型圆润度与闭合、转弯速率、前后刃相似度等，输出 100+ 数据维度。</p></div>
+    <div class="card"><div class="k">STEP 4</div><h4>场景识别与 Heygo IQ</h4><p>识别搓雪小回转、搓雪中回转、走刃、滚刃、刻滑 5 类场景，用不同的尺子打分；分数随水平单调上升。</p></div>
+    <div class="card"><div class="k">STEP 5</div><h4>问题识别</h4><p>甩板尾、缺少上半弧、换刃犹豫、立刃不稳定等常见问题，分前刃 / 后刃统计，一趟只给一个最该练的点。</p></div>
+    <div class="card"><div class="k">STEP 6</div><h4>AI 表达</h4><p>把结果变成听得懂、用得上的一句话、一份报告、一次对话。</p></div>
+  </div>
+
+  <h3>核心能力清单</h3>
+  <div class="tbl"><table>
+    <tr><th>能力</th><th>做什么</th><th>状态</th></tr>
+    <tr><td>滑行状态识别</td><td>区分滑行、走路、坐缆车、静止，找出有效滑行段</td><td><span class="pill">已上线</span></td></tr>
+    <tr><td>模型校准</td><td>求传感器相对雪板的方向，规则校准升级为模型校准，精度显著提升</td><td><span class="pill">已上线</span></td></tr>
+    <tr><td>佩戴方向自适应</td><td>自动识别内侧 / 外侧、左右脚；经上千场真实数据验证</td><td><span class="pill">已上线</span></td></tr>
+    <tr><td>速度模型</td><td>只用脚上传感器推算速度，以 RTK 高精度定位为训练标签</td><td><span class="pill">已上线</span></td></tr>
+    <tr><td>形变与坡度</td><td>修正雪鞋与雪板之间的形变，算准立刃角；有无 GPS 都能估坡度，室内雪场同样适用</td><td><span class="pill">已上线</span></td></tr>
+    <tr><td>场景识别与 Heygo IQ</td><td>13 项指标归入时机、施压、流畅度、对称四个维度，分场景评分；覆盖新手到教练</td><td><span class="pill">已上线</span></td></tr>
+    <tr><td>高光时刻</td><td>自动发现最快、最顺、立刃最深的瞬间</td><td><span class="pill">已上线</span></td></tr>
+    <tr><td>摔倒与松动检测</td><td>摔倒后关心提醒；识别设备松动、滑落并切换另一只脚的有效数据</td><td><span class="pill">已上线</span></td></tr>
+    <tr><td>端侧实时 SDK</td><td>手机上实时出趟、出 IQ、识别问题、触发语音，没网也能用</td><td><span class="pill">已上线</span></td></tr>
+    <tr><td>双板全链路</td><td>左右板分别校准、逐弯指标、技术阶段识别（犁式到卡宾）、双板 IQ</td><td><span class="pill b">研发中</span></td></tr>
+    <tr><td>IMU 基础模型</td><td>用大规模滑行数据做自监督预训练，探索 IMU 与视频跨模态对齐</td><td><span class="pill b">研发中</span></td></tr>
+  </table></div>
+
+  <div class="grid2" style="margin-top:28px">
+    <div class="card">
+      <div class="k">EDGE + CLOUD</div><h4>端侧 + 云端：实时又准确</h4>
+      <ul class="dot">
+        <li>端侧：手机上运行速度、形变等模型，一段滑完即出 IQ；实时问题识别和摔倒检测不依赖网络。</li>
+        <li>云端：流式增量结算，坐缆车上升自动触发，约 1.5 分钟出报告，在缆车上就能看到上一趟的反馈。</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="k">AI PARTNER</div><h4>会说人话的 AI 陪伴搭子</h4>
+      <ul class="dot">
+        <li>知识：自建滑雪知识图谱，按问题查询，不靠大模型自由发挥。</li>
+        <li>表达：教学文案规则和禁用词表，不堆术语。</li>
+        <li>评测：62 个场景的评分标准，由教练逐条人工评分，红线零违规才上线。</li>
+      </ul>
+    </div>
+  </div>
+  <figure><img src="img/kg.jpg" alt="知识图谱" loading="lazy"><figcaption>滑雪知识图谱：技巧、问题、练习、能力点连成网</figcaption></figure>
+
+  <h3>数据与标注飞轮</h3>
+  <div class="grid4">
+    <div class="card"><h4 class="num">200 万+</h4><p>累计采集滑行数据，覆盖室内雪场与新西兰、日本、中国等室外雪场。</p></div>
+    <div class="card"><h4>真值体系</h4><p>RTK 高精度定位真值、板载 IMU 真值，用于校准和速度评估。</p></div>
+    <div class="card"><h4>视频逐弯标注</h4><p>视频与传感器逐弯对齐，教练在标注平台逐弯打标，作为算法校验标准。</p></div>
+    <div class="card"><h4>专业共建</h4><p>与国际考官共建双板标准数据（考官示范 + 视频 + 考官评分），用于双板 IQ 定标。</p></div>
+  </div>
+
+  <h3>专利与知识产权</h3>
+  <div class="tbl"><table>
+    <tr><th>名称</th><th>状态</th><th>保护什么</th></tr>
+    <tr><td>安装位置自适应的双足惯性滑雪状态识别方法及系统</td><td>2026-09 受理，已请求实审</td><td>随手佩戴即可，自动识别安装位置与滑行状态</td></tr>
+    <tr><td>单双板通用的双足与雪板坐标系在线校准方法及系统</td><td>2026-09 受理，已请求实审</td><td>滑行中在线完成脚与雪板坐标系校准，安装偏移后自恢复；单板、双板通用</td></tr>
+    <tr><td>基于惯性测量单元的滑雪转弯检测与量化方法及系统</td><td>2026-09 受理，已请求实审</td><td>逐弯检测与量化，是逐弯指标、Heygo IQ 和问题识别的基础</td></tr>
+    <tr><td>滑行完整弯型的生成与呈现方法及系统</td><td>正式稿完成，进入申请流程</td><td>把一段滑行的多个弯按真实形状连成完整弯型，标注换刃点、立刃峰值</td></tr>
+    <tr><td>硬件结构及外观专利</td><td>已获批</td><td>硬件外观结构及传感器在雪鞋上的固定方式</td></tr>
+  </table></div>
+
+  <h3>为什么是 Heygo</h3>
+  <div class="grid3">
+    <div class="card"><h4>单板先发 + 双脚方案</h4><p>单板的关键信息在两只脚的差异里；我们是最早把双脚传感器做成量产消费产品的团队之一。同一套硬件覆盖单板与双板。</p></div>
+    <div class="card"><h4>全链路自研</h4><p>硬件、固件、端侧 SDK、云端算法、AI 一体化，迭代快，体验端到端优化。</p></div>
+    <div class="card"><h4>专业背书</h4><p>国际考官与教练参与教学体系和算法定标，结果对得上教练的眼睛。</p></div>
+  </div>
+</div></section>
+
+<!-- 5 TEAM -->
+<section id="team" class="dark"><div class="wrap">
+  <div class="sno">05 · TEAM</div>
+  <h2>团队：滑雪爱好者 × 算法工程师 × 教练</h2>
+  <p class="intro">创始团队来自字节跳动、腾讯、大疆，覆盖增长与商业化、产品与软件、AI 算法、硬件四条线。全员滑雪爱好者，约 60% 持 CASI / AASI / SBINZ / JSBA 教练认证。</p>
+  <figure><img src="img/team.jpg" alt="核心团队" loading="lazy"></figure>
+  <div class="grid2">
+    <div class="card"><div class="k">FOUNDER &amp; CEO</div><h4>Edward Wu</h4><p>前字节跳动飞书区域业务负责人、用户增长负责人。2019 年联合创立 vika（维格表）并任 CMO，主导增长与市场从 0 到 1。8 年创业经验、6 年单板滑雪经验，持 CASI 认证。</p></div>
+    <div class="card"><div class="k">CO-FOUNDER · 软件与产品</div><h4>Jason Bei</h4><p>曾任腾讯、字节跳动高级产品经理；飞书文档创始产品经理，负责过抖音内容生态与增长业务。AASI 认证单板滑雪教练，IK+ 滑雪社区负责人。</p></div>
+    <div class="card"><div class="k">CO-FOUNDER · AI 算法与数据科学</div><h4>CJ</h4><p>曾负责字节跳动 Seedance 算法、数据科学及智能创作相关工作，参与即梦视频生成模型的数据开发。曾带领 30 人团队参加 RoboMaster 机器人赛事，获多项全国一等奖。</p></div>
+    <div class="card"><div class="k">CO-FOUNDER · 硬件</div><h4>Dylan Li</h4><p>17 岁获 VEX 机器人世界冠军，18 岁加入大疆。创立深圳大学首个群体机器人实验室，拥有 30 余项专利；负责过多个 S 级硬件项目从 0 到 1。</p></div>
+    <div class="card"><div class="k">CIO</div><h4>Justin</h4><p>某头部 AI 科技公司联合创始人兼 CTO，管理超过 1,200 人研发团队，主导产品累计服务用户超过 1,000 万。</p></div>
+    <div class="card"><div class="k">CMO</div><h4>Cathy Zhang</h4><p>曾任 EcoFlow 欧洲、Realme 欧洲 CMO，带领团队实现 700% 销售增长；操盘百万美元级 Kickstarter 众筹、超 2 亿日元的 Makuake 众筹。</p></div>
+    <div class="card"><div class="k">CBO</div><h4>Iris Yang</h4><p>曾任 EcoFlow、NIKE 及全棉时代产品营销总监、渠道销售总监，主导过超 10 亿元人民币规模的品牌业务。</p></div>
+    <div class="card"><div class="k">AI NATIVE</div><h4>小团队，大产出</h4><p>AI 深度融入研发与运营的每个环节。同一支小团队在一个季度里完成硬件量产、App 中国区与国际区双区上线和全渠道开售。</p></div>
+  </div>
+  <h3>Heygo Pro Team：全球 Top 1% 的教练与考官</h3>
+  <p>教学体系和算法定标由来自加拿大、美国、瑞士、新西兰、日本、中国的考官与教练共同参与，覆盖 CASI、AASI、SBINZ、NZSIA、Swiss Snowsports、JSBA、SAJ 等主流教学体系。</p>
+  <figure><img src="img/proteam.jpg" alt="Pro Team" loading="lazy"><figcaption>Heygo Pro Team：CASI Level 4 考官、AASI 考官、SBINZ 考官、前新西兰残奥雪上项目教练等</figcaption></figure>
+</div></section>
+
+<!-- 6 VOICE -->
+<section id="voice"><div class="wrap">
+  <div class="sno">06 · USER VOICE</div>
+  <h2>用户反馈</h2>
+  <p class="intro">我们把内测访谈、用户群、教练和 KOL 体验中的原话逐条记录归类，目前已有 160+ 条。用户最认可的两件事：<b style="color:var(--ink)">数据维度多</b>，以及<b style="color:var(--ink)">测得准</b>。</p>
+  <div class="quotes">
+    <div class="q hl"><p>「朋友会说客套话，教练会鼓励你，但是 Heygo 的数据不会骗我。」</p><span>内测滑手</span></div>
+    <div class="q"><p>「它检测出来了。我前后刃弯型不对称，确实一直有这个问题……它叫我入弯先让膝盖往山下，这个它也有检测出来。」</p><span>中山单板教练</span></div>
+    <div class="q"><p>「挺震惊的，它会说检测到我在滑行里面有抖动……可能因为你的腿太直，这个我是没想到它会识别到。」</p><span>KKAKIN · 滑雪教练</span></div>
+    <div class="q"><p>「报告的文字不是什么很难的专业词汇，我的学生也都能看懂。」</p><span>KKAKIN · 滑雪教练</span></div>
+    <div class="q"><p>「我把你们总结的段落发给我的教练看了，教练认为你们说的是很对的，也是我目前的问题。」</p><span>内测用户</span></div>
+    <div class="q"><p>「它可以特别清晰地量化到立刃角度……有一些令我特别惊喜的数据，包括压力能测到。它可以往滑雪搭子方向成长，甚至比教练更了解我们。」</p><span>小白</span></div>
+    <div class="q"><p>「你们的 AI 做得非常好，既不像通用聊天机器人那么啰嗦，又很精确。」</p><span>wll</span></div>
+    <div class="q"><p>「弯型记录对我挺有帮助，结合 AI 的提示，我滑得越来越圆润了。」</p><span>张帅戈</span></div>
+    <div class="q"><p>「每次中途休息看一眼，下一回就按推荐姿势调节，比之前自己回看视频方便准确很多。」</p><span>李芷筠</span></div>
+    <div class="q"><p>「对立刃高度的变化是准确的，这趟我脚踝锁住，立刃确实更高。」</p><span>张琪</span></div>
+    <div class="q"><p>「我以为重心是前 6 后 4，实际是 5/5 开……有数据支撑，就是牛。」</p><span>用户群</span></div>
+    <div class="q"><p>「提示我换刃释放不要太快，施压不要太急……改完立马舒服了，分数也变高了。」</p><span>用户群</span></div>
+    <div class="q"><p>「你们文字做得真的很好，目前没有听过教练讲出这一段话的。」</p><span>用户群</span></div>
+    <div class="q"><p>「这个产品很轻便，基本属于无感。」</p><span>vivi</span></div>
+    <div class="q hl"><p>"It is like having a coach in your pocket. Very easy to use too."</p><span>Dean Elis · 海外用户</span></div>
+    <div class="q"><p>"It is very accurate. The app pinpointed exactly how I ride and built a profile."</p><span>Dean Elis · 海外用户</span></div>
+    <div class="q"><p>"I could spend 300–400 on an app I can use every day vs 1,500 on one private lesson."</p><span>Dean Elis · 海外用户</span></div>
+  </div>
+  <h3>用户群里的真实聊天</h3>
+  <p class="note" style="margin-top:-4px">以下为用户群、体验活动群的原始截图，已隐去头像和昵称。</p>
+  <div class="shots">
+    <figure><img src="img/u1.jpg" loading="lazy" alt=""><figcaption>「朋友会说客套话……但是 Heygo 的数据不会骗我」</figcaption></figure>
+    <figure><img src="img/u4.jpg" loading="lazy" alt=""><figcaption>「我觉得这个东西确实牛」「把我的毛病都告诉我了」</figcaption></figure>
+    <figure><img src="img/u3.jpg" loading="lazy" alt=""><figcaption>「改完立马舒服了，然后分数也变高了」</figcaption></figure>
+    <figure><img src="img/u5.jpg" loading="lazy" alt=""><figcaption>「目前没有听过教练讲出这一段话的」</figcaption></figure>
+    <figure><img src="img/u8.jpg" loading="lazy" alt=""><figcaption>「这个讲解好细致啊」</figcaption></figure>
+    <figure><img src="img/u7.jpg" loading="lazy" alt=""><figcaption>「它既然知道我滑的搓雪小回」</figcaption></figure>
+    <figure class="wide"><img src="img/u2.jpg" loading="lazy" alt=""><figcaption>「我以为重心是前 6 后 4，实际是 5/5 开……有数据支撑，就是牛」</figcaption></figure>
+    <figure class="wide"><img src="img/u6.jpg" loading="lazy" alt=""><figcaption>「Heygo 靠的是传感器紧贴身体，能第一时间知道我哪里发力不对」</figcaption></figure>
+  </div>
+
+  <div class="card" style="margin-top:6px">
+    <div class="k">CO-CREATION</div><h4>和教练、滑手「半开源」共创</h4>
+    <p>Heygo 从第一天就和教练、滑手一起做产品。共创滑手和我们一起推敲算法逻辑与产品指标。例如中回转弯型研究：用 511 个真实中回转，由三位教练和共创滑手两轮逐帧核对，定义了什么是合格的圆弯、「耐克弯」从哪里来，结论直接进入产品。可以看一份 <a href="https://heygoedge.github.io/r2f6c004383/#r2s1" target="_blank">滑手弯型分析示例</a>。</p>
+  </div>
+</div></section>
+
+<!-- 7 CLUB -->
+<section id="club" class="dark"><div class="wrap">
+  <div class="sno">07 · CLUB PARTNERSHIP</div>
+  <h2>和俱乐部一起玩：Official Heygo Training Partner</h2>
+  <p class="intro">俱乐部、雪校和教练团队是 Heygo 最重要的伙伴。我们希望 Heygo 成为俱乐部的教学工具和活动引擎：教练看得更清楚，会员练得更有目标，活动更有看点，俱乐部也多一份收入。</p>
+
+  <h3>俱乐部能得到什么</h3>
+  <div class="grid4">
+    <div class="card"><div class="k">COACH</div><h4>教练赋能</h4><p>逐弯数据和弯型图让教练「看见」肉眼看不到的立刃、受力和节奏；课后学员自己滑，数据继续跟踪，课程效果可量化。</p></div>
+    <div class="card"><div class="k">MEMBER</div><h4>会员价值</h4><p>会员专属权益、IQ 排行和挑战赛，让会员每次上雪都有目标，持续回到俱乐部。</p></div>
+    <div class="card"><div class="k">EVENT</div><h4>活动与内容</h4><p>联合公开课、试滑日、刷分赛、开板活动；设备赞助、联名物料、双方社媒互推。</p></div>
+    <div class="card"><div class="k">REVENUE</div><h4>商业收入</h4><p>分销佣金、门店寄售 / 采购、一件代发等多种方式，全渠道统一控价，保护伙伴利润。</p></div>
+  </div>
+
+  <h3>合作玩法菜单</h3>
+  <div class="tbl"><table>
+    <tr><th>玩法</th><th>怎么做</th><th>适合谁</th></tr>
+    <tr><td>教练试用 + 内容共创</td><td>先给俱乐部教练佩戴体验；认可后由教练讲解 + 学员实测 + 产品使用，出小红书 / 抖音 / IG 内容，双方互标共创方</td><td>所有俱乐部、教练团队，通常是第一步</td></tr>
+    <tr><td>联合公开课</td><td>俱乐部教练授课，学员全员佩戴 Heygo；课后用弯型图和 IQ 逐人点评，课程前后分数对比一目了然</td><td>有教练和学员池的刻滑、技术类俱乐部</td></tr>
+    <tr><td>装备试用日 / 试滑日</td><td>在雪场或门店设体验点，会员现场佩戴、滑一趟、看报告，体验后可当场购买</td><td>有场地、有门店的俱乐部</td></tr>
+    <tr><td>IQ 刷分挑战赛</td><td>按场景（刻滑 / 搓雪）设榜单，一段时间内比 Heygo IQ 最高分或进步最快，配奖品和联名海报</td><td>会员活跃、喜欢比拼的社群</td></tr>
+    <tr><td>开板 / 外滑活动赞助</td><td>俱乐部的开板、外滑、雪季活动，我们提供设备和物料赞助，对方做品牌露出</td><td>有固定活动节奏的俱乐部、高校雪协</td></tr>
+    <tr><td>分销 / 寄售 / 门店采购</td><td>用俱乐部的门店、电商或教练分销链接销售 Heygo，按约定比例分佣或拿差价；支持一件代发</td><td>有门店、电商、学员池的俱乐部和雪具店</td></tr>
+    <tr><td>数据共创 / 赛事量化</td><td>开放更深的数据，与高水平教练一起总结规律；在训练和比赛中做量化参考与数据展示</td><td>竞技队、协会、赛事方</td></tr>
+  </table></div>
+  <p class="note">具体权益、分成比例和设备数量，按俱乐部规模和合作深度单独商定。</p>
+
+</div></section>
+
+<!-- 8 ECO -->
+<section id="eco"><div class="wrap">
+  <div class="sno">08 · CHANNELS &amp; ECOSYSTEM</div>
+  <h2>渠道与生态</h2>
+  <p class="intro">线上电商直达，线下进入真实雪场。</p>
+  <figure><img src="img/global.jpg" alt="全球渠道" loading="lazy"></figure>
+  <div class="grid3">
+    <div class="card"><div class="k">CHINA ONLINE</div><h4>中国线上</h4><p>京东自营（含京东众筹首发）、天猫、小红书店铺、冷山（国内头部雪具垂直渠道）。</p></div>
+    <div class="card"><div class="k">GLOBAL DTC</div><h4>全球直营</h4><p>官网 heygo.ai 面向全球 38+ 国家和地区，支付、海外仓与物流全链路打通；首批订单来自美国、日本、加拿大、新加坡等市场。</p></div>
+    <div class="card"><div class="k">OFFLINE</div><h4>线下与生态</h4><p>俱乐部、雪场、雪具店、教练与协会、赛事、展会。</p></div>
+  </div>
+  <h3>下一步</h3>
+  <div class="grid3">
+    <div class="card"><div class="k">STAGE 1</div><h4>滑雪搭子</h4><p>先把单板做到最深，再用同一套硬件进入双板市场（2027 年初上线 App 双板模式和日本版）。</p></div>
+    <div class="card"><div class="k">STAGE 2</div><h4>运动智能终端</h4><p>从双脚两个节点扩展到全身多节点，覆盖更多板类与户外运动。</p></div>
+    <div class="card"><div class="k">STAGE 3</div><h4>个人运动健康入口</h4><p>把运动数据和心率、睡眠、恢复数据打通，给出「今天怎么练、练多少」的运动处方。</p></div>
+  </div>
+</div></section>
+
+<!-- 9 MEDIA -->
+<section id="media"><div class="wrap">
+  <div class="sno">09 · MEDIA &amp; RESOURCES</div>
+  <h2>媒体报道</h2>
+  <div class="links media">
+    <a href="https://mp.weixin.qq.com/s/Lodj-sAMmPbpVQeb-_0e0A" target="_blank"><i>36 氪</i><b>产品观察｜前字节、大疆、腾讯团队创业，瞄准 AI 滑雪赛道，获厚雪投资</b><span>2026-09</span></a>
+    <a href="https://mp.weixin.qq.com/s/mjgDxucfKph7Vd9_VztgvQ" target="_blank"><i>AING 硬迹</i><b>前字节 / 大疆成员创业要把 AI 穿在身上教你滑雪｜对话 Heygo</b><span>2026-09</span></a>
+    <div class="card"><div class="k">MORE</div><p>i 黑马、体育大生意、极客公园、ChinaTravelNews 等相继报道；京东众筹上线获中国日报网、腾讯新闻、搜狐、网易、凤凰、哔哩哔哩等 20 余家媒体转载。</p></div>
+  </div>
+
+  <h3>官网与公开资料</h3>
+  <div class="links">
+    <a href="https://heygo.ai" target="_blank"><i>官网</i><b>heygo.ai</b><span>全球官网与在线商店</span></a>
+    <a href="https://www.youtube.com/watch?v=TUYTge7igXg" target="_blank"><i>视频</i><b>品牌 TVC</b><span>2026 年 7 月新西兰拍摄</span></a>
+    <a href="https://heygoedge.github.io/r674670495e/" target="_blank"><i>体验</i><b>App 在线体验</b><span>生产版界面 + 演示数据，可直接点击</span></a>
+    <a href="https://heygoedge.github.io/?lang=zh" target="_blank"><i>介绍</i><b>Heygo 产品功能介绍</b><span>中 / 英</span></a>
+    <a href="https://heygoedge.github.io/manual/?lang=zh" target="_blank"><i>手册</i><b>S1 产品手册</b><span>佩戴、连接、使用说明</span></a>
+    <a href="https://heygoedge.github.io/r2f6c004383/#r2s1" target="_blank"><i>案例</i><b>滑手弯型分析</b><span>共创中产出的逐弯分析示例</span></a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <p><b>想和 Heygo 一起做点什么？</b></p>
+  <p>商务合作：<a href="mailto:business@heygo.ai">business@heygo.ai</a>　·　官网：<a href="https://heygo.ai" target="_blank">heygo.ai</a></p>
+  <p style="margin-top:14px">Heygo · 深圳市比特天空科技有限公司 / Heygo, Inc.　·　资料更新于 2026 年 11 月，产品规划以实际发布为准。</p>
+</div></footer>
+
+<script>
+const links=[...document.querySelectorAll('.nav a.l')];
+const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+addEventListener('scroll',()=>{let i=-1;secs.forEach((s,k)=>{if(s.getBoundingClientRect().top<120)i=k});links.forEach((a,k)=>a.classList.toggle('on',k===i))},{passive:true});
+</script>
+<div class="ov" id="ov"><div class="box"><div class="bar"><span class="t" id="ovt"></span><button id="ovc">复制链接</button><button class="x" id="ovx">关闭 ✕</button></div><iframe id="ovf" title="预览"></iframe></div></div>
+<div class="cp" id="cp"><div class="box"><h4 id="cpt">在浏览器中打开</h4><p>当前页面不支持直接跳转。复制链接后，粘贴到浏览器或微信里打开即可。</p><div class="u" id="cpu"></div><div class="row"><button id="cpx">关闭</button><button class="p" id="cpc">复制链接</button></div></div></div>
+<script>
+(function(){
+const EMBED=/^https:\/\/(heygoedge\.github\.io|mp\.weixin\.qq\.com)\//;
+const ov=document.getElementById('ov'),ovf=document.getElementById('ovf'),ovt=document.getElementById('ovt');
+const cp=document.getElementById('cp'),cpu=document.getElementById('cpu'),cpt=document.getElementById('cpt'),cpc=document.getElementById('cpc');
+let cur='';
+function copy(t,btn){const done=()=>{const o=btn.textContent;btn.textContent='已复制 ✓';setTimeout(()=>btn.textContent=o,1600)};
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,()=>fb(t,done))}else fb(t,done)}
+function fb(t,done){const a=document.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();try{document.execCommand('copy');done()}catch(e){}a.remove()}
+function label(a){return (a.querySelector('b')||a).textContent.trim().replace(/\s+/g,' ')}
+document.addEventListener('click',function(e){
+  const a=e.target.closest('a[href^="http"]');if(!a)return;
+  e.preventDefault();cur=a.href;
+  let w=null;try{w=window.open(cur,'_blank');if(w)w.opener=null}catch(_){}
+  if(w)return;
+  cpt.textContent=label(a);cpu.textContent=cur;cp.classList.add('on');
+});
+document.getElementById('ovx').onclick=()=>{ov.classList.remove('on');ovf.src='about:blank';document.body.style.overflow=''};
+document.getElementById('ovc').onclick=e=>copy(cur,e.target);
+document.getElementById('cpx').onclick=()=>cp.classList.remove('on');
+cpc.onclick=e=>copy(cur,e.target);
+cp.addEventListener('click',e=>{if(e.target===cp)cp.classList.remove('on')});
+})();
+</script>
+</body>
+</html>
